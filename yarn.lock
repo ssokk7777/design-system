@@ -843,10 +843,10 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-turbo-darwin-arm64@2.1.1:
+turbo-darwin-64@2.1.1:
   version "2.1.1"
-  resolved "https://registry.npmjs.org/turbo-darwin-arm64/-/turbo-darwin-arm64-2.1.1.tgz"
-  integrity sha512-tifJKD8yHY48rHXPMcM8o1jI/Jk2KCaXiNjTKvvy9Zsim61BZksNVLelIbrRoCGwAN6PUBZO2lGU5iL/TQJ5Pw==
+  resolved "https://registry.npmjs.org/turbo-darwin-64/-/turbo-darwin-64-2.1.1.tgz"
+  integrity sha512-aYNuJpZlCoi0Htd79fl/2DywpewGKijdXeOfg9KzNuPVKzSMYlAXuAlNGh0MKjiOcyqxQGL7Mq9LFhwA0VpDpQ==
 
 turbo@^2.0.3:
   version "2.1.1"
