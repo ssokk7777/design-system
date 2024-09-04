@@ -1,6 +1,6 @@
 {
   "name": "docs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "private": true,
   "scripts": {
@@ -29,8 +29,5 @@
     "@ssokk7777/eslint-config": "workspace:*",
     "typescript": "^5.3.3",
     "vite": "^5.1.4"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   }
 }
