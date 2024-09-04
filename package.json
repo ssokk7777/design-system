@@ -1,14 +1,14 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo build --filter=docs",
+    "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "yarn build && changeset publish"
+    "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
@@ -16,5 +16,9 @@
     "turbo": "^2.0.3"
   },
   "packageManager": "yarn@1.22.22",
-  "name": "design-system"
+  "name": "design-system",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
 }
