@@ -31,8 +31,12 @@ jobs:
 
       - name: Creating .npmrc
         run: |
-          echo "@ssokk7777:registry=https://npm.pkg.github.com" > $HOME/.npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GH_REGISTRY_TOKEN }}" >> $HOME/.npmrc
+          cat << EOF > "$HOME/.npmrc"
+            @ssokk7777:registry=https://npm.pkg.github.com
+            //npm.pkg.github.com/:_authToken=$GH_REGISTRY_TOKEN
+          EOF
+        env:
+          GH_REGISTRY_TOKEN: ${{ secrets.GH_REGISTRY_TOKEN }}
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
